@@ -25,4 +25,8 @@ production:
   adapter: postgresql
   pool: 5
   timeout: 5000
-  database: my_database_production
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
