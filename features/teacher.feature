@@ -22,7 +22,7 @@ Scenario: Logging in as a teacher should be able to edit their info
   And   I enter my "City" as "Cupertino"
   And   I select "CA" from "State"
   And   I enter my "School Website" as "https://chs.fuhsd.org"
-  And   I press "Submit"
+  And   I press "Update"
   Then  I see a confirmation "Successfully updated your information"
   Then  the "First Name" field should contain "Joe"
 

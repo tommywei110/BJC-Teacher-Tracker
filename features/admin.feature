@@ -54,7 +54,7 @@ Scenario: Edit teacher info as an admin
   When  I go to the edit page for Joseph Mamoa
   Then  I should see "Joseph"
   And   I enter my "First Name" as "Joe"
-  And   I press "Submit"
+  And   I press "Update"
   Then I see a confirmation "Successfully updated information"
 
 Scenario: Not logged in should not have access to edit

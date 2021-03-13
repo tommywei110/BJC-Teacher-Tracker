@@ -108,6 +108,10 @@
   <% end %>
 
   <div>
-    <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    <% if @is_editing %>
+      <%= f.submit 'Update', class: 'btn btn-primary' %>
+    <% else %>
+      <%= f.submit 'Submit', class: 'btn btn-primary' %>
+    <% end %>
   </div>
 <% end %>
