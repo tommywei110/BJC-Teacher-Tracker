@@ -18,3 +18,7 @@ input, select {
     content: " *";
   }
 }
+
+.form-control, .label-required, .label {
+  color: black !important;
+}
